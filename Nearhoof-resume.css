@@ -20,6 +20,12 @@
         @media(max-width: 768px) {
             address.laptop-address{display:none}
             body{font-size:1em;}
+            img:hover,
+            div.left:hover,
+            div.right:hover,
+            * {
+                animation: none !important;
+            }
         }
         @media (min-width: 769px) {
             div.left-mobile{display:none}
