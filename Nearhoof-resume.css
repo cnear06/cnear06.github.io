@@ -29,7 +29,8 @@
             height: 30vw;
         }
         img {
-            width: 40vw;
+            width: 20vw;
+            height: 25vw;
             margin: 10px;
             display: block;
             float: left;
