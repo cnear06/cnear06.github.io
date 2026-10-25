@@ -1,0 +1,89 @@
+/*Cohen Nearhoof 11/23/25*/
+        @keyframes switch-right{
+            0%{translate: 0vw 0px;}
+            25%{translate: 13.5vw 0px;}
+            50%{translate: 27vw 0px;}
+            75%{translate: 13.5vw 0px;}
+            100%{translate: 0vw 0px;}
+        }
+        @keyframes switch-left{
+            0%{translate: 0vw 0px;}
+            25%{translate: -13.5vw 0px;}
+            50%{translate: -27vw 0px;}
+            75%{translate: -13.5vw 0px;}
+            100%{translate: 0vw 0px;}
+        }
+        @keyframes enlarge {
+            0%{transform: rotate(0deg)}
+            100%{transform: rotate(360deg)}
+        }
+        @media(max-width: 768px) {
+            address.laptop-address{display:none}
+            body{font-size:1em;}
+        }
+        @media (min-width: 769px) {
+            div.left-mobile{display:none}
+        }
+        header {
+            background-color: #A3C9D9;
+            height: 30vw;
+        }
+        img {
+            width: 40vw;
+            margin: 10px;
+            display: block;
+            float: left;
+        }
+        img:hover {
+             animation: 10s linear infinite enlarge;
+        }
+        header > h1, header > h3 {
+            display: block;
+            margin-left: 10px;
+        }
+        header > h1 {
+            padding-top: 30px;
+            font-size: 6vw;
+            text-align: center;
+            color: #0A1326;
+        }
+        header > h3 {
+            color: #23518C;
+        }
+        div.left {
+            background-color: #A3C9D9;
+            padding: 10px;
+            margin-top: 10px;
+            float: left;
+            width: 70%;
+        }
+        div.left-mobile {
+            background-color: #A3C9D9;
+            padding: 10px;
+            margin-top: 10px;
+            float: left;
+            width: 70%;
+        }
+        div.left:hover {
+            animation: 2s linear infinite switch-right;
+        }
+        div.right:hover {
+            animation: 2s linear infinite switch-left;
+        }
+        h3:not(header > h3) {
+            text-align: center;
+            color: #23518C;
+        }
+        div.right {
+            background-color: #A3C9D9;
+            padding: 10px;
+            margin-top: 10px;
+            width: 70%;
+            float: right;
+        }
+        li, p {
+            color: #0A1326;
+        }
+        ol {
+            list-style: upper-roman;
+        }
